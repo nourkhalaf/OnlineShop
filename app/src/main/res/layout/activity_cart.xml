@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.CartActivity"
+    android:layoutDirection="ltr">
+
+
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cart List"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations,your final order has been placed successfully, soon it will be verified!"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/total_price"
+        android:layout_above="@+id/next_process_btn"
+
+        />
+    <Button
+        android:id="@+id/next_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:background="@drawable/button_back"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"/>
+
+
+
+</RelativeLayout>

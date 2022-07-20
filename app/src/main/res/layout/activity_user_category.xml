@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:layoutDirection="ltr"
+      >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_slogan_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:text="Products Categories"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear1_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/user_slogan_category"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_shirts"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hoodie" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Shirt"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_sports_t_shirts"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/tshirt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="T-Shirt"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear2_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear1_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_female_dresses"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fashion" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Dress"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_sweathers"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/jacket" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Jacket"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear2_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_glasses"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/sunglasses" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Glass"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_purses_bags_wallets"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Bag"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear7_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear3_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_trousers"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/trousers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Trouser"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_cosmetics"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/makeup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Cosmetics"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear7_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_hats_caps"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Hat"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_shoes"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/boots" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Shoes"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear5_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear4_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_headphones_handfree"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/headphone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Head Phone"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_laptop_pc"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/computer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Laptop"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear6_category_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/linear5_category_layout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_watches"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/wristwatch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Watch"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_mobilephones"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/smartphone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Mobile"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

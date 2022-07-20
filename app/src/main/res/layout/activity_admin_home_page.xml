@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminHomePageActivity"
+    android:layoutDirection="ltr">
+    
+    
+            <TextView
+                android:id="@+id/admin_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Dear Admin"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_margin="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/admin_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/admin_image"
+                android:layout_below="@+id/admin_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                 />
+
+
+    <Button
+                android:id="@+id/check_orders_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check New Orders"
+                android:textColor="@android:color/white"
+                android:layout_above="@+id/maintain_btn"
+                android:background="@drawable/button_back"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+            <Button
+                android:id="@+id/admin_logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_back"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+                />
+        <Button
+            android:id="@+id/maintain_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/admin_logout_btn"
+            android:text="Maintain Products"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_back"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            />
+    <Button
+        android:id="@+id/admin_add_product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/check_orders_btn"
+        android:text="Add New Product"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_back"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
